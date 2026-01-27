@@ -1,0 +1,117 @@
+<!-- RALPH A. MIOLE (SLSU) -->
+
+<!-- 
+Reflect on any challenges you faced and how you resolved them.
+
+Answer:
+    I faced challenges with properly aligning the form elements and ensuring the HTML structure was clean and semantic. 
+    I resolved these by carefully reviewing each element and making sure all tags were properly closed and nested.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate developer with experience in web development.</p>
+    </section>
+
+    <img src="ralph.png" alt="my formal photo" width="300" height="300"><br><br>
+
+    <h2>My Favorite Video Games of all time</h2>
+
+    <table border="1">
+        <tr>
+            <th>Game Name</th>
+            <th>Genre</th>
+            <th>Year Released</th>
+        </tr>
+        <tr>
+            <td>Dota 2</td>
+            <td>Multiplayer Online Battle Arena(MOBA)</td>
+            <td>2013</td>
+        </tr>
+        <tr>
+            <td>Frostborn</td>
+            <td>Fantasy - Adventure</td>
+            <td>2020</td>
+        </tr>
+        <tr>
+            <td>Tetris</td>
+            <td>Puzzle</td>
+            <td>1984</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form action="post">
+        <h2>Contact Me</h2>
+
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <fieldset>
+            <legend>
+                How did you hear about my portfolio?
+            </legend>
+
+            <input type="radio" id="choice_1" name="fieldset_radio">
+            <label for="choice_1">Friend</label><br>
+
+            <input type="radio" id="choice_2" name="fieldset_radio">
+            <label for="choice_2">Social Media</label><br>
+
+            <input type="radio" id="choice_3" name="fieldset_radio">
+            <label for="choice_3">Search Engine</label><br>
+
+            <input type="radio" id="choice_4" name="fieldset_radio">
+            <label for="choice_4">Other</label><br>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Skills/Interests</legend>
+
+            <input type="checkbox" id="skill_1" name="fieldset_checkbox">
+            <label for="skill_1">Web Development</label><br>
+
+            <input type="checkbox" id="skill_2" name="fieldset_checkbox">
+            <label for="skill_2">Design</label><br>
+
+            <input type="checkbox" id="skill_3" name="fieldset_checkbox">
+            <label for="skill_3">Photography</label><br>
+        </fieldset><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <footer>
+        <p>&copy; Ralph A. Miole - 2026</p>
+    </footer>
+
+</body>
+</html>

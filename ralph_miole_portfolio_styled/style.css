@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.title_header{
+    background-color: rgb(2, 68, 91);
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* for navigation bar style */
+.navigation_bar{
+    background-color: lightgrey;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.navigation_bar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation_bar a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.navigation_bar a:hover{
+    background-color: #3663a6;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* for image design */
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
+
+p{
+    font-size: 18px;
+    margin: 15px 40px;
+    text-align: center;
+}
+
+/* for table design */
+.table{
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table th, .table td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+.table th{
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* for all h2 tags */
+h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(85, 162, 187);
+}
+
+/* Style for the form */
+.form{
+    width: 500;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+.form label{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.form_input {
+    width: 650px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+
+fieldset {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+legend {
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #3667b1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* for footer design */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

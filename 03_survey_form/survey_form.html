@@ -1,0 +1,86 @@
+<!-- It took me 26 minutes to finish this project -->
+
+<!-- Reflect on any challenges or areas of confusion and how you resolved them.
+
+I found it a bit challenging to remember the exact syntax for some of the form elements, especially the fieldset and legend tags. 
+To resolve this, I referred back to my notes and online resources to ensure I was using them correctly. 
+I also added br tags to create spacing between different sections of the form for better readability.
+overall, I feel more confident in creating structured forms using HTML after completing this project.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+    
+    <h1>Survey Form</h1>
+    <form action="">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name">
+
+        <br><br>
+
+        <label for="email_address">Email Address:</label>
+        <input type="email" id="email_address" name="email_address">
+
+        <br><br>
+
+        <fieldset>
+            <legend>How would you rate your experience?</legend>
+            <input type="radio" id="rating_1" name="fieldset_radio">
+            <label for="rating_1">Very Satisfied</label><br>
+
+            <input type="radio" id="rating_2" name="fieldset_radio">
+            <label for="rating_2">Satisfied</label><br>
+
+            <input type="radio" id="rating_3" name="fieldset_radio">
+            <label for="rating_3">Neutral</label><br>
+
+            <input type="radio" id="rating_4" name="fieldset_radio">
+            <label for="rating_4">Dissatisfied</label><br>
+
+            <input type="radio" id="rating_5" name="fieldset_radio">
+            <label for="rating_5">Very Dissatisfied</label><br>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>What features do you value the most?</legend>
+
+            <input type="checkbox" id="checkbox_1" name="fieldset_checkbox">
+            <label for="checkbox_1">Easy to Use</label><br>
+
+            <input type="checkbox" id="checkbox_2" name="fieldset_checkbox">
+            <label for="checkbox_2">Design</label><br>
+
+            <input type="checkbox" id="checkbox_3" name="fieldset_checkbox">
+            <label for="checkbox_3">Customer Support</label><br>
+
+            
+        </fieldset>
+
+        <br><br>
+
+        <label for="describe">What best describes you?</label>
+        <select name="describe" id="describe">
+            <option value="">Select an option</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="professional">Professional</option>
+        </select>
+
+        <br><br>
+
+        <label for="feedback">Additional Feedback:</label><br>
+        <textarea id="feedback" name="feedback"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

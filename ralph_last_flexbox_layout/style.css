@@ -1,0 +1,36 @@
+body {
+    width: 1450px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+header {
+    background-color: #ffcc00;
+    height: 150px;
+}
+
+aside {
+    background-color: #9b59b6;
+    height: 300px;
+    width: 300px;
+
+}
+
+section {
+    background-color: #1abc9c;
+    height: 300px;
+    width: 1110px;
+
+}
+
+footer {
+    background-color: #e74c3c;
+    height: 100px;
+
+}

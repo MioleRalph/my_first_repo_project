@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>To-Do List</title>
 </head>
+
 <body>
-    <form class="form">
-        <h1>My To-Do List</h1>
+	<main class="container">
+		<h1>My To-Do List</h1>
+		<form>
+            <button type="submit">Add Task</button>
+			<input type="text" class="data_input" name="data_input" placeholder="Enter your task here..">
+		</form>
 
-        <section class="input-container">
-            <input type="text" id="add_task" name="add_task" placeholder="Enter your task here...">
-            <button type="button">Add Task</button>
-        </section>
+		<section class="task">
+			<li class="task1"> Learn CSS</li>
+			<li class="task2">Complete Assigment</li>
+			<li class="task1">Watch a Tutorial</li>
+		</section>
 
-        <main class="container">
-            <section class="check_list">
-                <div class="list list-1">Learn CSS</div>
-                <div class="list list-2">Complete assignment</div>
-                <div class="list list-1">Watch a Tutorial</div>
-            </section>
-        </main>
-    </form>
+	</main>
 </body>
 </html>

@@ -1,0 +1,6 @@
+In cloning the Bootstrap landing page, 
+my approach was to first analyze the layout and break it into sections such as the navbar, 
+hero section, and content areas. I struggled most with matching the spacing, alignment, and responsiveness of the design. 
+I overcame this by using the Inspect tool in Google Chrome to examine styles and by reviewing our recent Bootstrap topics, 
+especially the grid system and utility classes. The assignment took me around 3–4 hours to complete. 
+This experience helped me better understand how Bootstrap layouts are built and styled.

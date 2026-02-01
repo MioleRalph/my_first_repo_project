@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Roboto Slab", serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+}
+
+.line-break {
+    display: block;
+}
+
+.nav-bar {
+    border: .5px solid rgba(119, 119, 119, 0.719);
+    position: relative;
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    flex-grow: 1;
+    font-size: 14px;
+    padding-left: 120px;
+    padding-right: 180px;
+}
+
+.nav-bar ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+
+.nav-bar ol li {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-input {
+    flex-grow: 1;
+}
+
+.nav-bar ol li img {
+    height: 40px;
+    width: 250px;
+}
+
+.nav-bar ol li .nav-link {
+    text-decoration: none;
+    color: #333232;
+    transition: color 0.3s;
+}
+
+.nav-bar ol li .nav-link:hover {
+    color: #d16f6f;
+}
+
+.nav-bar ol li input {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 200px;
+    flex-grow: 1;
+
+}
+
+.nav-bar ol li input::placeholder {
+    color: #666;
+}
+
+.login-btn,
+.signup-btn,
+.about-signup-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #3787ff;
+    color: white;
+}
+
+.login-btn {
+    color: #0095ff;
+    background-color: transparent;
+    border: 2px solid #0095ff;
+}
+
+.signup-btn,
+.about-signup-btn {
+    background-color: #0095ff;
+    color: white;
+    border: none;
+}
+
+.about-signup-btn:hover,
+.signup-btn:hover {
+    border: 1px solid #0095ff;
+    background-color: transparent;
+    color: #0095ff;
+}
+
+.side-bar {
+    width: 240px;
+    height: 100vh;
+    background-color: white;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.separator {
+    padding-top: 15px;
+}
+
+.side-bar-list {
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-bar-list li,
+.side-bar-list li a {
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    color: #333232;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    padding: 24px 120px;
+    background-color: #ffffff;
+}
+
+.main-content {
+    max-width: 1100px;
+}
+
+.about {
+    background-color: #F9FAFA;
+    flex-grow: 1;
+    padding: 40px 60px;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.about h1 {
+    font-size: 50px;
+    position: relative;
+    z-index: 0;
+}
+
+.about p {
+    margin: 30px 0px;
+    font-size: 18px;
+
+}
+
+.about-signup-btn {
+    display: inline-block;
+    position: static;
+    margin-right: 16px;
+}
+
+.community-link {
+    position: static;
+    color: #3787ff;
+}
+
+
+.orange-background {
+    position: absolute;
+    z-index: -1;
+    width: 230px;
+    height: 50px;
+    left: 130px;
+}
+
+.about h1 .has-back {
+    display: inline;
+    color: rgb(255, 255, 255);
+}
+
+.about .illo {
+    height: 466px;
+    width: 446px;
+    position: static;
+    margin-top: 20px;
+    display: block;
+    max-width: 100%;
+}
+
+.main-content p {
+    padding: 30px 0px;
+    font-size: 20px;
+
+}
+
+main .services,
+main .Overflow-ai,
+main .business-solutions,
+main .work-here {
+    margin-top: 50px;
+    background-color: white;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 0px 60px;
+    overflow: visible;
+    position: relative;
+    height: auto;
+    border: .5px solid rgba(0, 0, 0, 0.164);
+}
+
+.services .stack-logo {
+    margin-top: 40px;
+    height: 90px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+main .services .for-teams {
+    position: static;
+    margin-left: 120px;
+    color: #fd8d32;
+    font-weight: bold;
+}
+
+.services .try-for-free {
+    color: #3787ff;
+    margin-left: 130px;
+
+}
+
+.home-teams {
+    margin-top: 20px;
+    height: 330px;
+    width: 564px;
+    display: block;
+    max-width: 100%;
+}
+
+main .Overflow-ai {
+    background: #3B4045;
+}
+
+.Overflow-ai .Overflow-logo {
+    height: 120px;
+    margin-top: 25px;
+}
+
+.Overflow-ai p .now-available{
+    color: white;
+    font-weight: bold;
+}
+
+.Overflow-ai p{
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.Overflow-ai .supercharge{
+    border-radius: 10px;
+    padding: 13px;
+    background-color: #fd8d32;
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    width: 230px;
+    font-size: 19px;
+}
+
+main .business-solutions{
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border-radius: 0;
+    height: auto;
+    gap: 23px;
+}
+
+main .business-solutions .stack-advert,
+main .business-solutions .stack-api{
+    border: rgba(0, 0, 0, 0.26) 1px solid ;
+    width:600px;
+    padding-left: 50px;
+    position: relative;
+    border-radius: 10px;
+}
+
+main .business-solutions .logo{
+    height: 200px;
+    max-width: 100%;
+}
+
+#advert,#api{
+    margin-top: 20px;
+}
+
+.business-solutions .stack-advert .a-advert{
+    position: static;
+    margin-top: 10px;
+    color: #3787ff;
+}
+
+.work-here .stack-logo-2 {
+    padding-top: 50px;
+    width: 350px;
+    max-width: 100%;
+}
+
+body main .work-here{
+    overflow: visible;
+    margin-bottom: 80px;
+}
+
+.work-here .about-signup-btn{
+    margin-top: 40px;
+}
+
+.careers{
+    margin-top: 20px;
+    width: 635px;
+    height: 500px;
+    display: block;
+    max-width: 100%;
+}
+
+/* Phone screens */
+@media (max-width: 480px) {
+    header {
+        position: static;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        padding: 10px;
+        align-items: stretch;
+    }
+
+    .nav-bar ol {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .nav-bar ol li {
+        margin-right: 0;
+    }
+
+    .nav-bar ol li img {
+        height: 30px;
+        width: 200px;
+        align-self: center;
+    }
+
+    .about,
+    .Overflow-ai {
+        display: none;
+    }
+
+    .search-input {
+        flex-grow: 0;
+    }
+
+    .nav-bar ol li input {
+        width: 100%;
+    }
+
+    .login-btn, .signup-btn, .about-signup-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 5px;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 15px 15px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .about .illo {
+        height: auto;
+        width: 100%;
+        max-width: 250px;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .orange-background {
+        left: 70px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .main-content p {
+        font-size: 18px;
+    }
+
+    .services, .Overflow-ai, .work-here {
+        padding: 15px 15px;
+        height: auto;
+    }
+
+    .services .stack-logo {
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .services .for-teams {
+        top: 60px;
+        left: 60px;
+    }
+
+    .home-teams {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        right: 0px;
+    }
+
+    .Overflow-ai .Overflow-logo {
+        height: 80px;
+    }
+
+    .Overflow-ai .supercharge {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .business-solutions {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .business-solutions .stack-advert, .business-solutions .stack-api {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .business-solutions .logo {
+        height: 150px;
+    }
+
+    #advert, #api {
+        margin-top: 10px;
+    }
+
+    .business-solutions .stack-advert .a-advert {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .work-here .stack-logo-2 {
+        width: 250px;
+    }
+
+    .careers {
+        position: static;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 481px) and (max-width: 1023px) {
+    .nav-bar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .nav-bar ol li img {
+        height: 35px;
+        width: 200px;
+    }
+
+    .nav-bar ol li input {
+        width: 100px;
+    }
+
+    .nav-bar ol li a {
+        width: 65px;
+    }
+
+    .about,
+    .Overflow-ai {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 180px 1fr;
+        gap: 15px;
+        padding: 15px 15px;
+    }
+
+    .side-bar {
+        width: 140px;
+    }
+
+    .main-content {
+        max-width: 100%;
+    }
+
+    .about {
+        padding: 20px 20px;
+        height: auto;
+    }
+
+    .about h1 {
+        font-size: 35px;
+    }
+
+    .about .illo {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        margin-top: 20px;
+    }
+
+    .orange-background {
+        left: 90px;
+        width: 163px;
+        height: 40px;
+    }
+
+    .services, .Overflow-ai, .work-here {
+        padding: 20px 20px;
+        height: auto;
+    }
+
+    .services .stack-logo {
+        height: 70px;
+    }
+
+    .home-teams {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .Overflow-ai .Overflow-logo {
+        height: 100px;
+    }
+
+    .business-solutions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .business-solutions .stack-advert, .business-solutions .stack-api {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .business-solutions .logo {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .work-here .stack-logo-2 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .careers {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 20px;
+    }
+}

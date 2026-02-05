@@ -1,6 +1,18 @@
 // 1. Write a discount function
 function getDiscount(customer_type, purchase_amount) {
 
+    // 4. Input validation and edge cases
+    if (typeof purchase_amount !== "number" || purchase_amount <= 0) {
+        console.warn("Invalid purchase amount. Treated as 0.");
+        purchase_amount = 0;
+    }
+
+    if (customer_type !== "member" && customer_type !== "non-member") {
+        console.warn("Invalid customer type. Treated as non-member.");
+        customer_type = "non-member";
+    }
+
+
     // Discount rules
     if (customer_type === "member" && purchase_amount >= 1000) {
         return 0.20;

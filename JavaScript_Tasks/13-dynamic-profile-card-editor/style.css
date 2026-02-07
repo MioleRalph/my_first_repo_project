@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 600px;
+}
+
+.card-img-top{
+    width: 140px;
+}

@@ -1,9 +1,9 @@
 body {
-  font-family: poppins, sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-main {
+#container {
   width: 300px;
   background-color: lightgray;
   margin: 50px auto;
@@ -15,7 +15,6 @@ main {
   border-radius: 10px;
   cursor: pointer;
 }
-
 .color-row {
   display: flex;
   justify-content: center;

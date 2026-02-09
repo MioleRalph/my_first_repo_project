@@ -1,0 +1,40 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        #box-container {
+            top: 10%;
+            width: 400px;
+            height: 400px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        /* Initially, the image is hidden inside the box */
+        #popup-image {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            bottom: 20px;
+            left: 45%;
+            transform: translateX(-50%) scale(0);
+            opacity: 0;
+            transition: transform 0.7s ease-out, opacity 0.5s ease-in, bottom 0.7s ease-out;
+            border-radius: 50%;
+        }
+
+        #button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }

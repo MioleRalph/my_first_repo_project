@@ -1,0 +1,77 @@
+body {
+    font-family: 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("images/imgi_2_in73r6sbixz31.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #0A1428;
+}
+
+#character-selection {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+    border: 2px solid #c9aa71;
+    padding: 12px;
+    background: #050505;
+}
+
+.character-thumb {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.character-thumb:hover {
+    transform: scale(1.05);
+}
+
+.character-thumb.selected {
+    border-color: #c9aa71;
+}
+
+#selected-character {
+    text-align: center;
+}
+
+#selected-image {
+    width: 600px;
+    height: 377px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #c9aa71;
+    margin-bottom: 10px;
+}
+
+#character-name {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}

@@ -3,7 +3,7 @@ const button = document.getElementById('button');
 const popupImage = document.getElementById('popup-image');
 
 // Set the source of the popup image
-popupImage.src = "assets/mochi.jpg";
+popupImage.src = "assets/image.jpg";
 
 // Initialize Lottie animation
 let boxAnimation = lottie.loadAnimation({

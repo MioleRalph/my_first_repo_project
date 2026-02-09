@@ -22,14 +22,13 @@ body {
         /* Initially, the image is hidden inside the box */
         #popup-image {
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             bottom: 20px;
             left: 45%;
             transform: translateX(-50%) scale(0);
             opacity: 0;
             transition: transform 0.7s ease-out, opacity 0.5s ease-in, bottom 0.7s ease-out;
-            border-radius: 50%;
         }
 
         #button {

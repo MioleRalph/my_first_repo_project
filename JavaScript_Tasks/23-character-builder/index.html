@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="character-preview">
+            <div class="armor-slot" data-part="helmet"></div>
+            <div class="armor-slot" data-part="armor"></div>
+            <div class="armor-slot" data-part="leggings"></div>
+            <div class="armor-slot" data-part="boots"></div>
+        </section>
+        <aside class="armor-selection">
+            <section class="group">
+                <h2>Helmets</h2>
+                <div class="options" data-part="helmet">
+                    <div class="option" data-src="assets/arctic_hood.png"><img src="assets/Arctic_Hood.png" alt="Arctic Helmet"></div>
+                    <div class="option" data-src="assets/fiery_helmet.png"><img src="assets/fiery_helmet.png" alt="Fiery Helmet"></div>
+                    <div class="option" data-src="assets/ironwood_helmet.png"><img src="assets/ironwood_helmet.png" alt="Ironwood Helmet"></div>
+                    <div class="option" data-src="assets/knightmetal_helmet.png"><img src="assets/knightmetal_helmet.png" alt="Knightmetal Helmet"></div>
+                    <div class="option" data-src="assets/steeleaf_helmet.png"><img src="assets/steeleaf_helmet.png" alt="Steelleaf Helmet"></div>
+                    <div class="option" data-src="assets/yeti_horned_helm.png"><img src="assets/yeti_horned_helm.png" alt="Yeti Helmet"></div>
+                </div>
+            </section>
+            <section class="group">
+                <h2>Armor</h2>
+                <div class="options" data-part="armor">
+                    <div class="option" data-src="assets/arctic_jacket.png"><img src="assets/Arctic_Jacket.png" alt="Arctic Armor"></div>
+                    <div class="option" data-src="assets/Fiery_Chestplate.png"><img src="assets/Fiery_Chestplate.png" alt="Fiery Armor"></div>
+                    <div class="option" data-src="assets/ironwood_chestplate.png"><img src="assets/Ironwood_Chestplate.png" alt="Ironwood Armor"></div>
+                    <div class="option" data-src="assets/Knightmetal_Chestplate.png"><img src="assets/Knightmetal_Chestplate.png" alt="Knightmetal Armor"></div>
+                    <div class="option" data-src="assets/Steeleaf_Chestplate.png"><img src="assets/Steeleaf_Chestplate.png" alt="Steelleaf Armor"></div>
+                    <div class="option" data-src="assets/Yeti_Jacket.png"><img src="assets/Yeti_Jacket.png" alt="Yeti Armor"></div>
+                </div>
+            </section>
+            <section class="group">
+                <h2>Leggings</h2>
+                <div class="options" data-part="leggings">
+                    <div class="option" data-src="assets/arctic_leggings.png"><img src="assets/Arctic_leggings.png" alt="Arctic Leggings"></div>
+                    <div class="option" data-src="assets/fiery_leggings.png"><img src="assets/fiery_leggings.png" alt="Fiery Leggings"></div>
+                    <div class="option" data-src="assets/ironwood_leggings.png"><img src="assets/ironwood_leggings.png" alt="Ironwood Leggings"></div>
+                    <div class="option" data-src="assets/knightmetal_greaves.png"><img src="assets/Knightmetal_Greaves.png" alt="Knightmetal Leggings"></div>
+                    <div class="option" data-src="assets/steeleaf_leggings.png"><img src="assets/steeleaf_leggings.png" alt="Steelleaf Leggings"></div>
+                    <div class="option" data-src="assets/yeti_leggings.png"><img src="assets/yeti_leggings.png" alt="Yeti Leggings"></div>
+                </div>
+            </section>
+            <section class="group">
+                <h2>Boots</h2>
+                <div class="options" data-part="boots">
+                    <div class="option" data-src="assets/arctic_boots.png"><img src="assets/arctic_boots.png" alt="Arctic Boots"></div>
+                    <div class="option" data-src="assets/fiery_boots.png"><img src="assets/fiery_boots.png" alt="Fiery Boots"></div>
+                    <div class="option" data-src="assets/ironwood_boots.png"><img src="assets/ironwood_boots.png" alt="Ironwood Boots"></div>
+                    <div class="option" data-src="assets/knightmetal_boots.png"><img src="assets/knightmetal_boots.png" alt="Knightmetal Boots"></div>
+                    <div class="option" data-src="assets/steeleaf_boots.png"><img src="assets/steeleaf_boots.png" alt="Steelleaf Boots"></div>
+                    <div class="option" data-src="assets/yeti_boots.png"><img src="assets/yeti_boots.png" alt="Yeti Boots"></div>
+                </div>
+            </section>
+            <button id="save-button">Save Character</button>
+            <div id="confirmation-message">Character Saved!</div>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

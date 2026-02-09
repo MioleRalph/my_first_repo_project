@@ -1,0 +1,126 @@
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+}
+
+.character-preview {
+    position: relative;
+    width: 400px; 
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.armor-slot {
+    position: absolute;
+    width: 90px;
+    height: 80px;
+}
+
+.armor-slot[data-part="helmet"] {
+    top: 5px; 
+    left: 146px;
+    width: 110px;
+
+}
+
+.armor-slot[data-part="armor"] {
+    top: 77px;
+    left: 145px;
+    width: 110px;
+
+}
+
+.armor-slot[data-part="leggings"] {
+    top: 144px;
+    left: 140px;
+    width: 120px;
+}
+
+.armor-slot[data-part="boots"] {
+    top: 210px;
+    left: 145px;
+    width: 110px;
+}
+
+.armor-slot img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+
+
+
+.armor-selection {
+    display: flex;
+    flex-direction: column;
+
+    .group {
+        margin-bottom: 20px;
+
+        h2 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    .options {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
+        justify-items: center;
+
+        .option {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            &.selected {
+                border-color: blue;
+            }
+        }
+    }
+}
+
+#save-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    display: none;
+    padding: 10px;
+    background-color: lightgreen;
+    border: 1px solid green;
+    text-align: center;
+}

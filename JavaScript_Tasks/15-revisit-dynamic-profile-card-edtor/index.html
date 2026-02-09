@@ -21,23 +21,19 @@
                 
             <div class="mb-3">
                 <input type="text" id="nameInput" class="form-control" placeholder="Enter new name">
-                <button class="btn btn-primary w-100 mt-2" onclick="updateName()">Update Name</button>
             </div>
 
             <div class="mb-3">
                 <input type="text" id="bioInput" class="form-control" placeholder="Enter new bio">
-                <button class="btn btn-primary w-100 mt-2" onclick="updateBio()">Update Bio</button>
             </div>
 
             <div class="mb-3">
                 <input type="text" id="imageInput" class="form-control" placeholder="Enter image URL">
-                <button class="btn btn-primary w-100 mt-2" onclick="updateImage()">Update Image</button>
             </div>
 
             <div class="mb-3">
                 <div class="d-flex gap-2">
                     <input type="color" id="colorInput" class="form-control form-control-color">
-                    <button class="btn btn-primary flex-grow-1" onclick="updateColor()">Change Background</button>
                 </div>
             </div>
 
@@ -47,9 +43,10 @@
                         <option value="Arial">Arial</option>
                         <option value="Times New Roman">Times New Roman</option>
                     </select>
-                    <button class="btn btn-primary" onclick="updateFont()">Font</button>
                 </div>
-             </div>
+            </div>
+
+            <button id="updateProfileBtn" class="btn btn-primary w-100 mt-3">Update Profile Card</button>
         </div>
     </main>
 

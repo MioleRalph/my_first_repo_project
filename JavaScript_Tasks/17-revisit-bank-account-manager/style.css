@@ -1,0 +1,13 @@
+.balance-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.transaction-card {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.limit-progress {
+    height: 25px;
+}

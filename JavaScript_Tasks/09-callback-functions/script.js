@@ -42,7 +42,8 @@ countdown(5, displayNumber)
 function createButton(buttonText, callback) {
     const button = document.createElement("button");
     button.textContent = buttonText;
-    button.addEventListener("click", callback);
+    button.onclick = callback;
+
     document.body.appendChild(button);
 }
 
